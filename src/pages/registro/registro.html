@@ -1,0 +1,54 @@
+<!--
+  Generated template for the RegistroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+
+<ion-content padding  class="bg-style">
+<br><br>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+     width="64" height="64"
+     viewBox="0 0 252 252"
+     style="fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"></path><g id="original-icon" fill="#2c3e50"><path d="M132.75281,196.99312c5.12663,-14.06869 16.57688,-25.87331 28.53506,-38.178c17.49431,-17.99831 35.58713,-36.61087 35.58713,-64.31512c0,-39.07969 -31.79531,-70.875 -70.875,-70.875c-39.07969,0 -70.875,31.79531 -70.875,70.875c0,27.70425 18.09281,46.31681 35.58713,64.31512c11.95819,12.30469 23.41237,24.10931 28.53506,38.178c-24.24319,0.79931 -36.55969,6.03619 -36.55969,15.63188c0,10.45012 14.57269,15.75 43.3125,15.75c28.73981,0 43.3125,-5.29987 43.3125,-15.75c0,-9.59569 -12.3165,-14.83256 -36.55969,-15.63188zM63,94.5c0,-34.73662 28.26337,-63 63,-63c34.73662,0 63,28.26337 63,63c0,24.51094 -16.20281,41.17837 -33.3585,58.82625c-11.68256,12.01725 -23.64469,24.32587 -29.6415,39.26475c-5.99681,-14.93887 -17.96288,-27.2475 -29.6415,-39.26475c-17.15569,-17.64787 -33.3585,-34.31531 -33.3585,-58.82625zM126,220.5c-26.00325,0 -35.4375,-4.70925 -35.4375,-7.875c0,-2.96887 8.30813,-7.30012 30.81487,-7.81987c0.23231,1.30725 0.40163,2.63419 0.51581,3.98475c-7.67419,0.35044 -16.89187,1.62619 -16.89187,3.83512c0,2.62631 13.02525,3.9375 20.99869,3.9375c7.97344,0 20.99869,-1.31119 20.99869,-3.9375c0,-2.20894 -9.21769,-3.48469 -16.89188,-3.83512c0.11419,-1.35056 0.2835,-2.68144 0.51581,-3.98475c22.50675,0.51975 30.81487,4.851 30.81487,7.81987c0,3.16575 -9.43425,7.875 -35.4375,7.875z"></path><path d="M157.5,94.5c0,-17.36831 -14.13169,-31.5 -31.5,-31.5c-17.36831,0 -31.5,14.13169 -31.5,31.5c0,17.36831 14.13169,31.5 31.5,31.5c17.36831,0 31.5,-14.13169 31.5,-31.5zM102.375,94.5c0,-13.02919 10.59581,-23.625 23.625,-23.625c13.02919,0 23.625,10.59581 23.625,23.625c0,13.02919 -10.59581,23.625 -23.625,23.625c-13.02919,0 -23.625,-10.59581 -23.625,-23.625z"></path><path d="M165.375,94.5h7.875c0,-26.05444 -21.19556,-47.25 -47.25,-47.25v7.875c21.71138,0 39.375,17.66362 39.375,39.375z"></path><circle cx="32" cy="24" transform="scale(3.9375,3.9375)" r="4"></circle></g><path d="M126,252c-69.58788,0 -126,-56.41212 -126,-126v0c0,-69.58788 56.41212,-126 126,-126v0c69.58788,0 126,56.41212 126,126v0c0,69.58788 -56.41212,126 -126,126z" fill="none"></path><path d="M126,246.96c-66.80436,0 -120.96,-54.15564 -120.96,-120.96v0c0,-66.80436 54.15564,-120.96 120.96,-120.96h0c66.80436,0 120.96,54.15564 120.96,120.96v0c0,66.80436 -54.15564,120.96 -120.96,120.96z" fill="none"></path><path d="" fill="none"></path><path d="" fill="none"></path></g></g></svg>
+<br><br>
+    <div>
+      <h2>Registro</h2>
+      
+    <form  (ngSubmit)="registrar()" >
+         
+          <ion-item class="item item-trns">
+            <ion-icon md="md-mail" item-start></ion-icon>
+            <ion-label  color="secondary" stacked>Correo:</ion-label>
+            <ion-input  [(ngModel)]="data.correo" name="correo" type="email" placeholder="example@example.com"></ion-input>
+          </ion-item>
+          <ion-item class="item item-trns">
+            <ion-icon name="person" item-start></ion-icon>
+            <ion-label  color="secondary" stacked>Nombre de Usuario:</ion-label>
+            <ion-input  [(ngModel)]="data.usuario" name="nombre" type="text" placeholder="Nombre"></ion-input>
+          </ion-item>
+          <ion-item class="item item-trns">
+              <ion-icon name="eye" item-start></ion-icon>
+              <ion-label color="secondary" stacked>Contraseña:</ion-label>
+              <ion-input [(ngModel)]="data.clave" name="password" type="password" placeholder="Contraseña"></ion-input>
+          </ion-item>
+          <ion-item class="item item-trns">
+            <ion-icon name="eye" item-start></ion-icon>
+            <ion-label  color="secondary" stacked>confirme la Contraseña:</ion-label>
+            <ion-input  [(ngModel)]="data.rclave" name="codigo" type="password" placeholder="Contraseña"></ion-input>
+          </ion-item>
+        <div padding>
+          <button ion-button block type="submit" >Registrar</button>
+        </div>
+      </form>
+    
+<br>
+
+          <button ion-button color="secondary" (click)="login()" clear>Login</button>
+<br>
+</div>
+
+</ion-content>

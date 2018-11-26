@@ -1,0 +1,20 @@
+page-nuevaruta {
+  .cuadro {
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: #fff;
+    /* shadows and rounded borders */
+    background-color: rgba(216, 195, 195, 0.541);
+  }
+
+  page-leaflet {
+    .map-container {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}

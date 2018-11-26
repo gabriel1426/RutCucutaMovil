@@ -1,0 +1,32 @@
+page-registro {
+    .bg-style {
+        background-image: url("https://www.avianca.com/content/dam/avianca/landings-destinos/fotos/cucuta.jpg");
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        border: 10px,
+    }
+    .item-md{
+        font-size: 1.6rem;
+        
+    }
+    .label-md[stacked]{
+        font-size: 2rem;
+    }
+    .logo{
+        display:block;
+        margin:auto;
+        max-width: 200px;
+        max-height: 240px;
+    }
+    .centro{
+        display:block;
+        margin:auto;
+    }
+    .item.item-trns {
+        border-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+        color: white; 
+    }
+}

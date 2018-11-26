@@ -1,0 +1,26 @@
+<!--
+  Generated template for the MisrutasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+    <ion-title>Rutas Guardadas</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h2>Favoritos</h2>
+
+  <ion-list>
+    <ion-item *ngFor="let imagen of imagenes">
+      <ion-thumbnail item-start>
+        <img src="{{imagen.src}}" #hola (click)="presentImage(hola)" />
+      </ion-thumbnail>
+      <h2>Aeropuerto</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
